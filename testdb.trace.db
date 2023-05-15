@@ -1,19 +1,17 @@
-2023-05-12 18:12:01 jdbc[3]: exception
-org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DATABASECHANGELOGLOCK" not found (this database is empty); SQL statement:
-SELECT COUNT(*) FROM DATABASECHANGELOGLOCK [42104-214]
-2023-05-15 13:31:56 jdbc[3]: exception
+
+2023-05-15 15:57:08 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CANDIDATES" не найдена
 Table "CANDIDATES" not found; SQL statement:
 INSERT INTO candidates(name, description, created, file_id) VALUES(?, ?, ?, ?) [42102-214]
-2023-05-15 13:31:56 jdbc[3]: exception
+2023-05-15 15:57:08 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CANDIDATES" не найдена
 Table "CANDIDATES" not found; SQL statement:
 SELECT * FROM candidates [42102-214]
-2023-05-15 13:36:37 jdbc[3]: exception
+2023-05-15 15:59:25 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CANDIDATES" не найдена
 Table "CANDIDATES" not found; SQL statement:
 INSERT INTO candidates(name, description, created, file_id) VALUES(?, ?, ?, ?) [42102-214]
-2023-05-15 13:36:37 jdbc[3]: exception
+2023-05-15 15:59:25 jdbc[3]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Таблица "CANDIDATES" не найдена
 Table "CANDIDATES" not found; SQL statement:
 SELECT * FROM candidates [42102-214]

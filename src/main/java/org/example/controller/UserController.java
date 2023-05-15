@@ -20,7 +20,7 @@ public class UserController {
 
     @GetMapping("/register")
     public String getRegistrationPage() {
-        return "user/register";
+        return "users/register";
     }
 
     @PostMapping("/register")
@@ -32,5 +32,20 @@ public class UserController {
             model.addAttribute("message", "User с таким @mail есть в системе");
             return "errors/404";
         }
+    }
+
+    @GetMapping("/login")
+    public String getLoginPage() {
+        return "users/login";
+    }
+
+    @PostMapping("/login")
+    public String loginUser(@ModelAttribute User user, Model model) {
+        var userOptional = userService.findByEmailAndPassword(user.getEmail(), user.getPassword());
+        if (userOptional.isEmpty()) {
+            model.addAttribute("error", "Почта или пароль введены неверно");
+            return "users/login";
+        }
+        return "redirect:/vacancies";
     }
 }
