@@ -1,7 +1,6 @@
 package org.example.repository;
 
 import org.example.model.Candidate;
-import org.example.model.Vacancy;
 import org.springframework.stereotype.Repository;
 import org.sql2o.Sql2o;
 
