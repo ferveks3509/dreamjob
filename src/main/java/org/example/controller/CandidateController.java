@@ -2,14 +2,11 @@ package org.example.controller;
 
 import org.example.dto.FileDto;
 import org.example.model.Candidate;
-import org.example.model.User;
 import org.example.service.CandidateService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
-
-import javax.servlet.http.HttpSession;
 
 @Controller
 @RequestMapping("/candidates")
